@@ -45,8 +45,10 @@ nav {
     position: relative;
 }
 
-.nav-list li:last-child {
-    margin-left: auto;
+.nav-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .nav-link {
@@ -91,30 +93,6 @@ nav {
 .mega-section li a:hover {
     color: aqua;
     text-decoration: underline;
-}
-
-.cart-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background-color: rgb(255, 192, 103);
-    color: white;
-    padding: 8px 14px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cart-link:hover {
-    background-color: black;
-}
-
-.cart-badge {
-    background-color: #ef4444;
-    color: white;
-    border-radius: 9999px;
-    padding: 2px 6px;
-    font-size: 12px;
 }
 
 .hero-video {
@@ -425,8 +403,8 @@ footer p {
 
 /* Book Now button */
 .book-btn {
-    background: rgb(255, 192, 103);
-    color: #1e1e1e;
+    background: #0f172a;
+    color: white;
     padding: 14px 28px;
     border-radius: 999px;
     font-size: 18px;
@@ -440,7 +418,7 @@ footer p {
 .book-btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-    background: #000;
+    background: #020617;
     color: white;
 }
 
@@ -460,9 +438,10 @@ footer p {
         align-items: center;
     }
 
-    .nav-list li:last-child {
-        margin-left: 0;
-        margin-top: 10px;
+    .nav-list li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .nav-link {
@@ -541,12 +520,5 @@ footer p {
     footer img {
         width: 40px;
         height: auto;
-    }
-}
-@media (max-width: 768px) {
-    .add-to-cart-btn,
-    .book-btn {
-        padding: 16px;
-        font-size: 16px;
     }
 }
